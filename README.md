@@ -1,17 +1,17 @@
-<meta http-equiv="refresh" content="0; url='https://mimbcd-ui.github.io/repo-template-datasets/web/index.html'" />
+<meta http-equiv="refresh" content="0; url='https://mimbcd-ui.github.io/dataset-assistant-outputs/web/index.html'" />
 
-# Datasets Repository Template
+# Assistant Outputs Dataset
 
 <img src="https://github.com/MIMBCD-UI/meta/blob/master/banners/datasets_1280x640.png?raw=true" width="100%" />
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg?style=flat-square)](LICENSE)
-[![Last commit](https://img.shields.io/github/last-commit/MIMBCD-UI/repo-template-datasets?style=flat-square)](https://github.com/MIMBCD-UI/repo-template-datasets/commits/master)
+[![Last commit](https://img.shields.io/github/last-commit/MIMBCD-UI/dataset-assistant-outputs?style=flat-square)](https://github.com/MIMBCD-UI/dataset-assistant-outputs/commits/master)
 [![OpenCollective](https://opencollective.com/oppr/backers/badge.svg?style=flat-square)](#backers)
 [![OpenCollective](https://opencollective.com/oppr/sponsors/badge.svg?style=flat-square)](#sponsors)
 [![Gitter](https://img.shields.io/gitter/room/gitterHQ/gitter.svg?style=flat-square)](https://gitter.im/opprTeam)
 [![Twitter](https://flat.badgen.net/twitter/follow/opprGroup)](https://twitter.com/opprGroup)
 
-Several *datasets* are fostering innovation in higher-level functions for everyone, everywhere. By providing this repository, we hope to encourage the research community to focus on hard problems. In this repository, we aim to provide a template repository for *datasets*. The repository was developed by a community of people under the [opprDev](https://dev.oppr.io/) Team from [oppr](https://oppr.io/). This template will be used in [BreastScreening](https://breastscreening.github.io/), [MIDA](https://mida-project.github.io/) and [MIMBCD-UI](https://mimbcd-ui.github.io/) projects. This repository is complementary to the [`repo-template-datasets`](https://github.com/opprDev/repo-template-datasets) repository of [opprDev](https://github.com/opprDev) GitHub organization. The sampling [`overview.csv`](dataset/overview.csv) file on the [`dataset/`](dataset/) folder was extrated from the [CT Medical Images](https://www.kaggle.com/kmader/siim-medical-images) *dataset*.
+First of all, this repository is highly based on the [`dataset-uta7-ai`](https://github.com/MIMBCD-UI/dataset-uta7-ai) repository. Please reference to the documentation provide in both repositories. The present repository will be used in [BreastScreening](https://breastscreening.github.io/), [MIDA](https://mida-project.github.io/) and [MIMBCD-UI](https://mimbcd-ui.github.io/) projects. Similar to what we did to the [`dataset-uta7-classifications`](https://github.com/MIMBCD-UI/dataset-uta7-classifications) and [`dataset-uta10-classifications`](https://github.com/MIMBCD-UI/dataset-uta10-classifications) repositories, the [`dataset`](dataset) folder has information criteria from both [`mida_uta7_unanonymize`](https://docs.google.com/spreadsheets/d/1EZHiBtGgMG7bMjafs3BP2xe02TA2OYS2DBcdAR2Vej8) and [`mimbcdui_uta10_patients`](https://docs.google.com/spreadsheets/d/1BpES35vPs69PnBsqH_FQUtYPB9WiCZP02tKKyjQ5ya0) *sheets*. Patients were selected from the [`dataset-uta7-dicom`](https://github.com/MIMBCD-UI/dataset-uta7-dicom) and [`dataset-uta10-dicom`](https://github.com/MIMBCD-UI/dataset-uta10-dicom) repositories. This repository serves the purpose of providing information concerning some patient data to the `src/common/outputs/` folders of the [`prototype-assertive-proactive`](https://github.com/MIMBCD-UI/prototype-assertive-proactive), [`prototype-assertive-reactive`](https://github.com/MIMBCD-UI/prototype-assertive-reactive), [`prototype-non-assertive-proactive`](https://github.com/MIMBCD-UI/prototype-non-assertive-proactive), and [`prototype-non-assertive-reactive`](https://github.com/MIMBCD-UI/prototype-non-assertive-reactive) repositories. For more information about the available *datasets* please follow the [Datasets](https://github.com/MIMBCD-UI/meta/wiki/Datasets) page on the [Wiki](https://github.com/MIMBCD-UI/meta/wiki) of the [`meta`](https://github.com/MIMBCD-UI/meta) information repository. Last but not least, you can find further information on the [Wiki](https://github.com/MIMBCD-UI/dataset-uta7-ai/wiki) in this repository. We also have several demos to see in our [YouTube Channel](https://www.youtube.com/channel/UCPz4aTIVHekHXTxHTUOLmXw), please follow us.
 
 ## Citing
 
@@ -20,13 +20,17 @@ We kindly ask **scientific works and studies** that make use of the repository t
 You can cite our work using the following BibTeX entry:
 
 ```
-@misc{https://doi.org/10.5281/zenodo.3738763,
-  doi = {10.5281/ZENODO.3738763},
-  url = {https://zenodo.org/record/3738763},
-  author = {Calisto,  Francisco Maria},
-  title = {opprDev/repo-template-datasets: v0.1.1-alpha},
-  publisher = {Zenodo},
-  year = {2020}
+@article{CALISTO2021102607,
+title = {Introduction of Human-Centric AI Assistant to Aid Radiologists for Multimodal Breast Image Classification},
+journal = {International Journal of Human-Computer Studies},
+pages = {102607},
+year = {2021},
+issn = {1071-5819},
+doi = {https://doi.org/10.1016/j.ijhcs.2021.102607},
+url = {https://www.sciencedirect.com/science/article/pii/S1071581921000252},
+author = {Francisco Maria Calisto and Carlos Santiago and Nuno Nunes and Jacinto C. Nascimento},
+keywords = {Human-Computer Interaction, Artificial Intelligence, Healthcare, Medical Imaging, Breast Cancer},
+abstract = {In this research, we take an HCI perspective on the opportunities provided by AI techniques in medical imaging, focusing on workflow efficiency and quality, preventing errors and variability of diagnosis in Breast Cancer. Starting from a holistic understanding of the clinical context, we developed BreastScreening to support Multimodality and integrate AI techniques (using a deep neural network to support automatic and reliable classification) in the medical diagnosis workflow. This was assessed by using a significant number of clinical settings and radiologists. Here we present: i) user study findings of 45 physicians comprising nine clinical institutions; ii) list of design recommendations for visualization to support breast screening radiomics; iii) evaluation results of a proof-of-concept BreastScreening prototype for two conditions Current (without AI assistant) and AI-Assisted; and iv) evidence from the impact of a Multimodality and AI-Assisted strategy in diagnosing and severity classification of lesions. The above strategies will allow us to conclude about the behaviour of clinicians when an AI module is present in a diagnostic system. This behaviour will have a direct impact in the clinicians workflow that is thoroughly addressed herein. Our results show a high level of acceptance of AI techniques from radiologists and point to a significant reduction of cognitive workload and improvement in diagnosis execution.}
 }
 ```
 
@@ -64,7 +68,7 @@ At this point, the only way to install this repository is manual. Eventually, th
 Nonetheless, this kind of installation is as simple as cloning this repository. Virtually all Git and GitHub version control tools are capable of doing that. Through the console, we can use the command below, but other ways are also fine.
 
 ```bash
-git clone https://github.com/MIMBCD-UI/repo-template-datasets.git
+git clone https://github.com/MIMBCD-UI/dataset-assistant-outputs.git
 ```
 
 Optionally, the module/directory can be installed into the designated Python interpreter by moving it into the site-packages directory at the respective Python directory.
@@ -93,7 +97,7 @@ This project exists thanks to all the people who [contribute](CONTRIBUTING.md). 
 
 ### Issuer
 
-Either as something that seems missing or any need for support, just open a [new issue](https://github.com/opprDev/repo-template-datasets/issues/new). Regardless of being a simple request or a fully-structured feature, we will do our best to understand them and, eventually, solve them.
+Either as something that seems missing or any need for support, just open a [new issue](https://github.com/opprDev/dataset-assistant-outputs/issues/new). Regardless of being a simple request or a fully-structured feature, we will do our best to understand them and, eventually, solve them.
 
 ### Developer
 
@@ -133,7 +137,7 @@ Copyright &copy; 2020 [Instituto Superior Técnico](http://tecnico.ulisboa.pt/)
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 
-The [`repo-template-datasets`](https://github.com/MIMBCD-UI/repo-template-datasets) repository is distributed under the terms of [GNU AGPLv3](LICENSE) license and [CC-BY-SA-4.0](COPYING) copyright. Permissions of this license are conditioned on making available complete elements from this repository of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved.
+The [`dataset-assistant-outputs`](https://github.com/MIMBCD-UI/dataset-assistant-outputs) repository is distributed under the terms of [GNU AGPLv3](LICENSE) license and [CC-BY-SA-4.0](COPYING) copyright. Permissions of this license are conditioned on making available complete elements from this repository of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved.
 
 ### Team
 
